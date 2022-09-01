@@ -1,7 +1,55 @@
 <html>
-    <head>
-        <script src="script.js"></script>
-    </head>
-    <body>
-    </body>
+  <head>
+    <title>APIs</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--  -->
+      <form class="form"">
+        <input class="color-picker" type="color" />
+        <select id="mode" name="colors">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+        <input id="submit" type="submit" value="Get color scheme" />
+      </form>
+      <!--  -->
+      <div class="color-scheme">
+        <!--  -->
+        <div class="color-wrap">
+            <div class="color" id="color-0"></div>
+            <div class="hex-code" id="hex-0"></div>
+        </div>
+        <!--  -->
+        <div class="color-wrap">
+            <div class="color" id="color-1"></div>
+            <div class="hex-code" id="hex-1"></div>
+        </div>
+        <!--  -->
+        <div class="color-wrap">
+            <div class="color" id="color-2"></div>
+            <div class="hex-code" id="hex-2"></div>
+        </div>
+        <!--  -->
+        <div class="color-wrap">
+            <div class="color" id="color-3"></div>
+            <div class="hex-code" id="hex-3"></div>
+        </div>
+        <!--  -->
+        <div class="color-wrap">
+            <div class="color" id="color-4"></div>
+            <div class="hex-code" id="hex-4"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="colorScheme.js"></script>
+  </body>
 </html>
