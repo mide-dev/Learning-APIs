@@ -8,9 +8,11 @@ if (navigator.geolocation) {
 
     // plug lat, lng into the weather api
     fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=1424e32e84c17f8b0642cec2ee9cbf02`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=Metric&appid=1424e32e84c17f8b0642cec2ee9cbf02`
     )
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        console.log(data);
+      });
   });
 }
